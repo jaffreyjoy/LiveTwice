@@ -1,6 +1,6 @@
 <?php
   session_start();
-  $conn = new mysqli("localhost","root","","organd");
+  $conn = new mysqli("localhost","id3320560_root_lol","lol1234","id3320560_organd");
   if(isset($_SESSION["username"])) {
     $username = $_SESSION["username"];
     $sql = "SELECT name FROM user WHERE username='$username'";
@@ -121,7 +121,7 @@
         <div class="carousel-caption">
 
           <p></p>
-          <p align="left"><a class="btn btn-lg btn-success"  href="">Learn More!</a>
+          <p align="left"><a class="btn btn-lg btn-success"  href="learn.html">Learn More!</a>
         </p>
         </div>
       </div>

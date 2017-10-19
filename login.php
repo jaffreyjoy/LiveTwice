@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST["login_btn"])) {
 
-      $conn = new mysqli("localhost","root","","organd");
+        $conn = new mysqli("localhost","id3320560_root_lol","lol1234","id3320560_organd");
 
     if($conn->connect_error) {
           die("Connection failed: " . $conn->connect_error);

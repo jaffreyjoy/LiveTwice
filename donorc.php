@@ -1,6 +1,6 @@
 <?php
   session_start();
-      $conn = new mysqli("localhost","root","","organd");
+      $conn = new mysqli("localhost","id3320560_root_lol","lol1234","id3320560_organd");
 
       $un = $_SESSION['username'];
 
