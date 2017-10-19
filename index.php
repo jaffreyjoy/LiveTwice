@@ -121,7 +121,7 @@
         <div class="carousel-caption">
 
           <p></p>
-          <p align="left"><a class="btn btn-lg btn-success"  href="">Learn More!</a>
+          <p align="left"><a class="btn btn-lg btn-success"  href="learn.html">Learn More!</a>
         </p>
         </div>
       </div>
