@@ -93,43 +93,38 @@
 
 </div>
 </nav>
-<form class="" action="update.php" enctype="multipart/form-data" method="post">
-  <div class="card" style="padding-left:10%">
-  <h1 class="card-header">Your Profile :-</h1><br>
-  <div class="card-block">
-    <div class="col-md-4">
-      <u><h4 class="card-title">Personal details :-</h4></u><br>
-      <label class="card-text">Name : </label><br>
-        <input style="width:60%;" id="name" type="text" name="name" class="form-control" value=""><br>
-      <label class="card-text">Username :</label>
-         <input style="width:60%;" id="un" type="text" name="username" class="form-control" value="" readonly><br>
-      <label class="card-text">Email : </label><br>
-        <input style="width:60%;" id="email" type="text" name="email" class="form-control" value=""><br>
-      <label class="card-text">DOB : </label><br>
-        <input style="width:60%;" id="dob" type="date" name="dob" class="form-control" value=""><br>
-      <br><br>
+ <form class="" action="update.php" enctype="multipart/form-data" method="post">
+    <div class="card" style="padding-left:10%">
+      <h1 class="card-header">Your Profile :-</h1><br>
+      <div class="card-block">
+        <div class="col-md-4">
+          <u><h4 class="card-title">Personal details :-</h4></u><br>
+          <label class="card-text">Name : </label><br>
+            <input style="width:60%;" id="name" type="text" name="name" class="form-control" value=""><br>
+          <label class="card-text">Username :</label>
+             <input style="width:60%;" id="un" type="text" name="username" class="form-control" value="" readonly><br>
+          <label class="card-text">Email : </label><br>
+            <input style="width:60%;" id="email" type="text" name="email" class="form-control" value=""><br>
+          <label class="card-text">DOB : </label><br>
+            <input style="width:60%;" id="dob" type="date" name="dob" class="form-control" value=""><br>
+          <br><br>
+        </div>
 
-        <button class="btn btn-primary" type="submit" name="button">Update Details</button>
-
-
+        <div class="col-md-4">
+          <u><h4 class="card-title">Donation details :-</h4></u><br>
+          <label class="card-text">Donor type :</label><br>
+            <input style="width:60%;" id="don_type"  type="text" name="don_type"  class="form-control" value=""><br>
+          <label class="card-text">Blood Type :</label><br>
+           <input style="width:60%;" id="blood_type"  type="text"  name="blood_type" class="form-control" value=""><br>
+          <label class="card-text">Medical Certificate :</label><br>
+          <p>Previously uploaded file :- <label id="med_cername"></label></p>
+          <input style="width:60%;" id="med_cer" name="file" type="file" class="form-control" value=""><br><br><br>
+          <button class="btn btn-primary" type="submit" name="button">Update Details</button>
+        </div>
     </div>
+    
 
-    <div class="col-md-4">
-      <u><h4 class="card-title">Donation details :-</h4></u><br>
-      <label class="card-text">Donor type :</label><br>
-        <input style="width:60%;" id="don_type"  type="text" name="don_type"  class="form-control" value=""><br>
-      <label class="card-text">Blood Type :</label><br>
-       <input style="width:60%;" id="blood_type"  type="text"  name="blood_type" class="form-control" value=""><br>
-      <label class="card-text">Medical Certificate :</label><br>
-      <p>Previously uploaded file :- <label id="med_cername"></label></p>
-      <input style="width:60%;" id="med_cer" name="file" type="file" class="form-control" value=""><br>
-
-    </div>
-    </form>
-
-
-  </div>
-  </div>
+  </form>
   <script>
       document.getElementById('name').value="<?php echo $name?>"
       document.getElementById('un').value="<?php echo $un?>";
